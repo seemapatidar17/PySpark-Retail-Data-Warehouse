@@ -85,9 +85,24 @@ PySpark-Retail-Data-Warehouse
 
 ## Dashboard Preview
 
-Dashboard screenshots are available inside:
+![Dashboard](dashboard_shots/dashboard_overview.png)
 
-dashboard_shots/
+---
+
+## Results
+
+- Total Revenue: 20.31M
+- Total Orders: 98.67K
+- Total Customers: 99.44K
+
+---
+
+## Future Enhancements
+
+- Incremental ETL pipelines
+- Automated scheduling
+- Cloud deployment
+- Advanced KPI reporting
 
 ---
 
