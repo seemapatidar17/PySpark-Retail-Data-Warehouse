@@ -17,31 +17,51 @@ The project processes raw e-commerce datasets, creates dimensional and fact tabl
 
 ## Architecture
 
-Raw CSV Files
+Brazilian E-Commerce Dataset (CSV)
 ↓
-PySpark ETL
+PostgreSQL Data Storage
 ↓
-Data Cleaning & Validation
+Data Validation & Relationship Checks
 ↓
-Dimension Tables
+PySpark ETL Pipeline (Databricks)
 ↓
-Fact Table
+Data Cleaning & Transformation
 ↓
-Delta Lake Storage
+Star Schema Design
+(Fact Sales + Dimension Tables)
 ↓
-SQL Analytics
+Delta Lake Tables
 ↓
-Databricks Dashboard
+SQL Analytics & KPI Computation
+↓
+Interactive Databricks Dashboard
+↓
+Business Insights & Reporting
 
 ---
 
-## Technologies Used
+## Technologies & Concepts
 
+### Databases
+- PostgreSQL
+
+### Data Processing
 - Python
 - PySpark
-- SQL
 - Databricks
+
+### Data Warehousing
+- Star Schema
+- Fact & Dimension Modeling
 - Delta Lake
+
+### Analytics
+- SQL
+- KPI Analysis
+- Business Insights
+
+### Version Control
+- Git
 - GitHub
 
 ---
@@ -80,6 +100,23 @@ PySpark-Retail-Data-Warehouse
 ├── dashboard_shots/
 ├── docs/
 └── README.md
+
+---
+
+## Star Schema Design
+
+The project follows a Star Schema model consisting of:
+
+- Fact Table: fact_sales
+- Dimension Tables:
+  - dim_customer
+  - dim_product
+  - dim_seller
+  - dim_date
+
+See the schema diagram:
+
+docs/star_schema.png
 
 ---
 
