@@ -1,4 +1,4 @@
-ELECT * FROM raw_data.customers
+SELECT * FROM raw_data.customers
 LIMIT 10;
 
 SELECT COUNT(*) FROM raw_data.orders;
