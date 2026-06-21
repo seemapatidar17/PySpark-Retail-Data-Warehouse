@@ -8,7 +8,7 @@ CREATE TABLE warehouse.dim_customer (
 
     customer_state VARCHAR(10)
 
-);
+)
 
 INSERT INTO warehouse.dim_customer (
     customer_id,
